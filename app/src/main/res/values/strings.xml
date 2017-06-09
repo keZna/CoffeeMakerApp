@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Coffee Maker App</string>
+    <string name="lblwelcome">Welcome</string>
+    <string name="lblcoffee_lovers_guide">A Coffee Lovers Guide</string>
+    <string name="btnmenu">Coffee Menu</string>
+    <string name="btnquick_order">Quick Order</string>
+    <string name="btnExit">Exit</string>
+    <string name="lblCoffee_menu">Coffee Menu</string>
+    <string name="lblLatte">Latte</string>
+    <string name="lblCappuccino">Cappuccino</string>
+    <string name="lblBlack_tea">Black Tea</string>
+    <string name="lblIce_tea">Ice Tea</string>
+    <string name="lblMarocchino">Marocchino</string>
+    <string name="lblEspresso">Espresso</string>
+    <string name="lblAmericano">Americano</string>
+    <string name="lblFlat_white">Flat White</string>
+    <string name="lblChocolate">Chocolate</string>
+    <string name="btnOrder">Order</string>
+    <string name="btnQuick_order">Quick Order</string>
+</resources>

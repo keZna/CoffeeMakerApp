@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.example.codetride.coffeemakerapp.Cappuccino">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/secret"
+        android:scaleType="fitStart"
+        android:id="@+id/imgSecret"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/lblQuickOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="42sp"
+        android:text="Cappuccino"
+        android:textColor="#996633"
+        android:layout_below="@+id/imgSecret"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/lblLovers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblQuickOrder"
+        android:layout_centerHorizontal="true"
+        android:text="@string/lblcoffee_lovers_guide"
+        android:textColor="#996633"
+        android:textSize="14sp"
+        android:layout_marginBottom="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:src="@drawable/cappuccino"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/lblQuickOrder"
+        android:layout_centerHorizontal="true" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/google_play"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
