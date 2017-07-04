@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000"
+    android:background="#000000"
     tools:context="com.example.codetride.coffeemakerapp.Menu">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:src="@drawable/secret"
         android:scaleType="fitStart"
         android:id="@+id/imgSecret"
@@ -20,13 +20,14 @@
     <TextView
         android:id="@+id/lblMenu"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:textStyle="bold"
         android:textSize="34sp"
         android:textColor="#996633"
         android:text="@string/lblCoffee_menu"
-        android:layout_below="@+id/imgSecret"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -39,7 +40,7 @@
     <ImageView
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/fire"
+        android:src="@drawable/logo"
         android:layout_below="@id/lblMenu"
         android:layout_centerHorizontal="true"/>
 
@@ -47,7 +48,7 @@
         android:id="@+id/imgLogo1"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/americano"
         tools:ignore="RtlHardcoded"
         android:layout_alignTop="@+id/imgLogo4"
         android:layout_marginLeft="50dp" />
@@ -57,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textColor="#FFF"
+        android:textColor="#996633"
         android:text="@string/lblAmericano"
         android:layout_below="@+id/imgLogo1"
         android:layout_marginLeft="36dp"
@@ -67,7 +68,7 @@
         android:id="@+id/imgLogo2"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/chocolate"
         tools:ignore="RtlHardcoded"
         android:layout_above="@+id/textView6"
         android:layout_alignLeft="@+id/imgLogo1"
@@ -78,7 +79,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textColor="#FFF"
+        android:textColor="#996633"
         android:text="@string/lblChocolate"
         android:layout_below="@+id/imgLogo2"
         android:layout_marginLeft="35dp"
@@ -88,7 +89,7 @@
         android:id="@+id/imgLogo3"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/latte"
         tools:ignore="RtlHardcoded"
         android:layout_above="@+id/textView9"
         android:layout_alignLeft="@+id/imgLogo2"
@@ -99,7 +100,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textColor="#FFF"
+        android:textColor="#996633"
         android:text="@string/lblLatte"
         android:layout_below="@+id/imgLogo3"
         android:layout_marginLeft="53dp"
@@ -109,7 +110,7 @@
         android:id="@+id/imgLogo4"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/espresso"
         android:layout_below="@+id/imageView3"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="17dp" />
@@ -121,14 +122,14 @@
         android:layout_below="@+id/imgLogo4"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
-        android:textColor="#FFF"
+        android:textColor="#996633"
         android:text="@string/lblEspresso" />
 
     <ImageView
         android:id="@+id/imgLogo5"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/marocchino"
         android:layout_alignTop="@+id/imgLogo8"
         android:layout_alignLeft="@+id/imgLogo4"
         android:layout_alignStart="@+id/imgLogo4" />
@@ -138,7 +139,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textColor="#FFF"
+        android:textColor="#996633"
         android:text="@string/lblMarocchino"
         android:layout_below="@+id/imgLogo5"
         android:layout_centerHorizontal="true" />
@@ -147,7 +148,7 @@
         android:id="@+id/imgLogo6"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/cappuccino"
         android:layout_marginTop="43dp"
         android:layout_below="@+id/imgLogo5"
         android:layout_alignLeft="@+id/imgLogo5"
@@ -161,14 +162,14 @@
         android:layout_alignStart="@+id/textView6"
         android:layout_below="@+id/imgLogo6"
         android:textStyle="bold"
-        android:textColor="#FFF"
+        android:textColor="#996633"
         android:text="@string/lblCappuccino" />
 
     <ImageView
         android:id="@+id/imgLogo7"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/ice_tea"
         android:layout_below="@+id/imageView3"
         android:layout_alignParentRight="true"
         android:layout_marginTop="17dp"
@@ -180,7 +181,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textColor="#FFF"
+        android:textColor="#996633"
         android:text="@string/lblIce_tea"
         android:layout_below="@+id/imgLogo7"
         android:layout_alignLeft="@+id/imgLogo7"
@@ -190,7 +191,7 @@
         android:id="@+id/imgLogo8"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/white"
         android:layout_marginTop="43dp"
         tools:ignore="RtlHardcoded"
         android:layout_below="@+id/imgLogo7"
@@ -201,7 +202,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textColor="#FFF"
+        android:textColor="#996633"
         android:text="@string/lblFlat_white"
         tools:ignore="RtlHardcoded"
         android:layout_below="@+id/imgLogo8"
@@ -211,7 +212,7 @@
         android:id="@+id/imgLogo9"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/black_tea"
         tools:ignore="RtlHardcoded"
         android:layout_alignTop="@+id/imgLogo6"
         android:layout_alignLeft="@+id/imgLogo8" />
@@ -221,26 +222,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textColor="#FFF"
+        android:textColor="#996633"
         android:text="@string/lblBlack_tea"
         android:layout_below="@+id/imgLogo9"
         android:layout_alignLeft="@+id/textView7"
         tools:ignore="RtlHardcoded" />
 
     <Button
-        android:id="@+id/btnOrder"
+        android:id="@+id/btnExit"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:layout_alignEnd="@+id/lblMenu"
-        android:layout_alignLeft="@+id/lblMenu"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/lblMenu"
-        android:layout_alignStart="@+id/lblMenu"
+        android:layout_toRightOf="@+id/textView8"
         android:background="#996633"
-        android:textStyle="bold"
-        android:textColor="#FFF"
+        android:text="@string/exitMenu"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
-        android:layout_marginBottom="15dp"
-        android:text="@string/btnOrder" />
+        android:textStyle="bold"
+        tools:ignore="RtlHardcoded" />
 
 </RelativeLayout>

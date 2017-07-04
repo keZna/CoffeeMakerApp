@@ -26,7 +26,7 @@
         android:textStyle="bold"
         android:textSize="42sp"
         android:text="@string/lblwelcome"
-        android:textColor="#996633"
+        android:textColor="#FF0000"
         android:layout_below="@+id/imgSecret"
         android:layout_centerHorizontal="true" />
 
@@ -37,7 +37,7 @@
         android:layout_below="@+id/lblWelcome"
         android:layout_centerHorizontal="true"
         android:text="@string/lblcoffee_lovers_guide"
-        android:textColor="#996633"
+        android:textColor="#FFFFFF"
         android:textSize="14sp"
         android:layout_marginBottom="25dp"
         android:textStyle="bold" />
@@ -105,7 +105,7 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="30dp"
         app:srcCompat="@drawable/google_play"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"

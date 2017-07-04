@@ -10,7 +10,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnMenu;
+    private Button btnMenuh;
     private Button btnOrder;
     private Button btnExit;
     private Intent intent;
@@ -20,17 +20,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnMenu= (Button) findViewById(R.id.btnMenu);
+        btnMenuh= (Button) findViewById(R.id.btnMenu);
         btnOrder= (Button) findViewById(R.id.btnQuickOrder);
         btnExit= (Button) findViewById(R.id.btnExit);
 
-        btnMenu.setOnClickListener(new Button.OnClickListener() {
+//        btnMenu.setOnClickListener(new Button.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                intent = new Intent(MainActivity.this,Menu.class);
+//                startActivity(intent);
+//            }
+//        });
+        btnMenuh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 intent = new Intent(MainActivity.this,Menu.class);
-                startActivity(intent);
-
+               startActivity(intent);
 
             }
         });

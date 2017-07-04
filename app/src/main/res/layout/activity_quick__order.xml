@@ -4,52 +4,179 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000"
+    android:background="#335"
+    style="@style/AppTheme"
     tools:context="com.example.codetride.coffeemakerapp.Quick_Order">
 
-    <ImageView
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/secret"
-        android:scaleType="fitStart"
-        android:id="@+id/imgSecret"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        tools:ignore="UselessParent">
 
-    <TextView
-        android:id="@+id/lblQuickOrder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:textStyle="bold"
-        android:textSize="42sp"
-        android:text="@string/btnQuick_order"
-        android:textColor="#996633"
-        android:layout_below="@+id/imgSecret"
-        android:layout_centerHorizontal="true" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/lblLovers"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lblQuickOrder"
-        android:layout_centerHorizontal="true"
-        android:text="@string/lblcoffee_lovers_guide"
-        android:textColor="#996633"
-        android:textSize="14sp"
-        android:layout_marginBottom="25dp"
-        android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imgSecret"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/secret" />
+
+            <TextView
+                android:id="@+id/lblQuickOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgSecret"
+                android:layout_centerHorizontal="true"
+                android:text="@string/btnQuick_order"
+                android:textColor="#FF0000"
+                android:textSize="42sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblLovers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblQuickOrder"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:text="@string/lblcoffee_lovers_guide"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        app:srcCompat="@drawable/google_play"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="15dp"
-        android:layout_alignParentStart="true" />
+            <CheckBox
+                android:id="@+id/Americano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblLovers"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:text="@string/rad_americano"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Americano"
+                android:layout_alignStart="@+id/Americano"
+                android:layout_below="@+id/Americano"
+                android:layout_weight="1"
+                android:text="@string/rad_black"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/Cappuccino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Americano"
+                android:layout_alignStart="@+id/Americano"
+                android:layout_below="@+id/Black"
+                android:layout_weight="1"
+                android:text="@string/rad_cappuccino"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/Chocolate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Americano"
+                android:layout_alignStart="@+id/Americano"
+                android:layout_below="@+id/Cappuccino"
+                android:layout_weight="1"
+                android:text="@string/rad_chocolate"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/Espresso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Americano"
+                android:layout_alignStart="@+id/Americano"
+                android:layout_below="@+id/Chocolate"
+                android:layout_weight="1"
+                android:text="@string/rad_espresso"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Americano"
+                android:layout_alignStart="@+id/Americano"
+                android:layout_below="@+id/Espresso"
+                android:layout_weight="1"
+                android:text="@string/rad_flat"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/Ice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Americano"
+                android:layout_alignStart="@+id/Americano"
+                android:layout_below="@+id/Flat"
+                android:layout_weight="1"
+                android:text="@string/rad_ice"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/Latte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Americano"
+                android:layout_alignStart="@+id/Americano"
+                android:layout_below="@+id/Ice"
+                android:layout_weight="1"
+                android:text="@string/rad_latte"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/Marocchino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Americano"
+                android:layout_alignStart="@+id/Americano"
+                android:layout_below="@+id/Latte"
+                android:layout_weight="1"
+                android:text="@string/rad_marocchino"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/display_order"
+                android:textStyle="bold"
+                android:layout_below="@id/Marocchino"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                />
+
+            <Button
+                android:id="@+id/sendQuick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/display"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Send Order"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>
